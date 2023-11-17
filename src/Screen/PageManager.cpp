@@ -185,7 +185,7 @@ unsigned long PageManager::drawSignalGraph( SH1106& screen )
 unsigned long PageManager::drawSplashImage( SH1106& screen )
 {
     screen.clear();
-    screen.drawXbm( 0, 0, 128, 53, bSidesLogo );
+    screen.drawXbm( 0, 0, 128, 64, bSidesLogo );
     screen.display();
     return 0;
 }
