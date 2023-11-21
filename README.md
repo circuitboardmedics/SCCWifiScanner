@@ -1,28 +1,61 @@
-# BSidesWifiScanner
+# SCC Wifi Scanner
+<div style="text-align:center">
 
-![BSidesKit](https://github.com/circuitboardmedics/BSidesWifiScanner/assets/5779011/e2b1d360-d259-46aa-b84c-78f1aae5670e)
+![Alt text](img/kit-bag.jpg)
 
+</div>
 
 # Overview
-BSidesWifiScanner is a custom project commisioned by and designed for the [BSides 2023 Cybersecurity conference](https://www.bsidesgreenville.org/) in Greenville, SC. The device is capable of scanning for Wi-Fi networks, displaying the AP's MAC, the network's encryption type, as well as the current channel and RSSI.  It can also graphically display the signal strength of individual networks. The firmware features modular button handling, a timer for display fields, and a page manager for different UI screens.
+SCC Wifi Scanner is a custom electronics project for Spartanburg Community College's Computer Club, forked from the 2023 soldering village at [BSides 2023 Cybersecurity conference in Greenville, SC. ](https://github.com/circuitboardmedics/BSidesWifiScanner) 
 
-## Assembly
+This device is capable of scanning Wi-Fi networks, displaying the AP's MAC, the network's encryption type, as well as the current channel and RSSI.  It can also graphically display the signal strength of individual networks. The firmware features modular button handling, a timer for display fields, and a page manager for different UI screens.
+
+# Assembly
+A soldering iron and basic soldering skills are required to assemble the kit, but no other special tools are needed.  
+
+
+## Diagram
+Follow the diagram below for component placement. 
+
+
+![Install Diagram](</img/SCC Badge Assy.png>)
+
+## Tips
+1. Suggested soldering order: `U2`, `U1`, `Buttons`, `C1`, `SW0`, `BT1`
+
+1. Polarity (Orientation) of `BT1`, `C1`, and `U2` matters; follow the diagram for placement.  The Capacitor C1 has white stripe on one side that should align with the white marking on the board.
+
+1. Install the battery into the clip LAST, so as to avoid any short circuits during assembly. 
+
+1. The optional female headers can be used instead of mounting `U2` directly to the board, in order to make it removable.  Alternatively, they can be mounted adjacent to `U2` to provide access to the GPIO pins of the microcontroller.
+
+
+
+
+## Video
+
 [![Assembly Video](http://img.youtube.com/vi/cxqOrxhz6VQ/0.jpg)](http://www.youtube.com/watch?v=cxqOrxhz6VQ "Badge Assembly Video")
 
-## Bill Of Materials:
-- [WeMos D1 Mini microcontroller](https://www.amazon.com/s?k=wemos+d1+mini)
-- [1.3 Inch IIC I2C OLED Display Module 128x64 Pixel SH1106 Screen Module](https://www.amazon.com/gp/product/B0C3L7N917/)
-- [SPST Micro Switch](https://www.amazon.com/gp/product/B07BD1SPYG)
-- ~100uF Electrolytic capacitor
-- CR123 Battery
+_(note that the capacitor is shown installed backwards in the video. the white stripe should align with the white marking on the pcb)_
+
+
+## Component Bill Of Materials:
+- [1.3 Inch IIC I2C OLED Display Module 128x64 Pixel SH1106 Screen Module](https://www.amazon.com/gp/product/B0C3L7N917/) (U1)
+- [WeMos D1 Mini microcontroller](https://www.amazon.com/s?k=wemos+d1+mini) (U2)
+- [SPST Micro Switch](https://www.amazon.com/gp/product/B07BD1SPYG) (SW0)
+- 1 [Tactile momentary switch 6x6x5 mm](https://www.amazon.com/gp/product/B01CGMP9G) (Left, Center, Right)
+- ~100uF Electrolytic capacitor (C1)
+- CR123 Battery (BT1)
 
 ## PCB
-KiCad design files for the PCB are included in the .zip.
+KiCad design files for the PCB, including schematic, are included in the pcb folder.
 
 
 # Programming 
+The microcontrollers are pre-flashed with the WiFi scanner firmware, but can be re-programmed with any other custom firmware following the tutorial below.
 
 ## Prerequisites
+- USB Micro cable
 - Visual Studio Code
 - PlatformIO IDE extension
 - ESP8266 or compatible board
@@ -54,9 +87,11 @@ KiCad design files for the PCB are included in the .zip.
 # Usage
 After flashing, the device will start scanning for Wi-Fi networks and display a graphical representation of the signal strength for individual networks. Use the buttons to navigate through different pages.
 
-![bsides1](https://github.com/circuitboardmedics/BSidesWifiScanner/assets/39735406/03e90326-5ef2-4477-9201-dd1ca8c2671a)
-![BSidesSelect](https://github.com/circuitboardmedics/BSidesWifiScanner/assets/5779011/e0134b6d-a24f-4a62-9546-30c748888c46)
-![BSidesGraph](https://github.com/circuitboardmedics/BSidesWifiScanner/assets/5779011/b9c0b4c6-5811-4503-af9f-f0507ae3750a)
 
+<div style="text-align:center">
+
+![Alt text](img/SCC-Full-VERT-2757-7740-DIGITAL.png)
+
+![Alt text](img/cbm.png)
 
 </div>
