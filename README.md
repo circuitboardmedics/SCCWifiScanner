@@ -1,9 +1,9 @@
 # SCC Wifi Scanner
-<div style="text-align:center">
+<p align="center">
+  <img src="img/kit-bag.jpg"/>
+</p>
 
-![Alt text](img/kit-bag.jpg)
-
-</div>
+</p>
 
 # Overview
 SCC Wifi Scanner is a custom electronics project for Spartanburg Community College's Computer Club, forked from the 2023 soldering village at [BSides 2023 Cybersecurity conference in Greenville, SC. ](https://github.com/circuitboardmedics/BSidesWifiScanner) 
@@ -87,11 +87,9 @@ The microcontrollers are pre-flashed with the WiFi scanner firmware, but can be 
 # Usage
 After flashing, the device will start scanning for Wi-Fi networks and display a graphical representation of the signal strength for individual networks. Use the buttons to navigate through different pages.
 
+# Thank you
+<p width="100%" align="center">
+  <img src="img/SCC-Full-VERT-2757-7740-DIGITAL.png" width="33%" valign="top"/>
+  <img src="img/cbm.png" width="33%" valign="top"/>
+</p>
 
-<div style="text-align:center">
-
-![Alt text](img/SCC-Full-VERT-2757-7740-DIGITAL.png)
-
-![Alt text](img/cbm.png)
-
-</div>
