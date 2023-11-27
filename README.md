@@ -25,7 +25,11 @@ Follow the diagram below for component placement.
 
 1. Polarity (Orientation) of `BT1`, `C1`, and `U2` matters; follow the diagram for placement.  The Capacitor C1 has white stripe on one side that should align with the white marking on the board.
 
-1. Install the battery into the clip LAST, so as to avoid any short circuits during assembly. 
+1. Install the battery into the clip LAST, so as to avoid any short circuits during assembly.
+   
+1. Clip the long legs off the capacitor once soldered so they do not short to each other or anything else.
+
+1. Residue left from soldering can be cleaned with Isopropyl alcohol.
 
 1. The optional female headers can be used instead of mounting `U2` directly to the board, in order to make it removable.  Alternatively, they can be mounted adjacent to `U2` to provide access to the GPIO pins of the microcontroller.
 
